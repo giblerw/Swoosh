@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SkillVC.swift
 //  Swoosh
 //
 //  Created by Weston Gibler on 9/12/18.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SkillVC: UIViewController {
 
+    var player: Player!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(player.desiredLeague)
     }
 
-
 }
-

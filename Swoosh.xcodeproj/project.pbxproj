@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		58635E5F2149B99D00925B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E5E2149B99D00925B38 /* AppDelegate.swift */; };
-		58635E612149B99D00925B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E602149B99D00925B38 /* ViewController.swift */; };
+		58635E612149B99D00925B38 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E602149B99D00925B38 /* WelcomeVC.swift */; };
 		58635E642149B99D00925B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58635E622149B99D00925B38 /* Main.storyboard */; };
 		58635E662149B99E00925B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58635E652149B99E00925B38 /* Assets.xcassets */; };
 		58635E692149B99E00925B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58635E672149B99E00925B38 /* LaunchScreen.storyboard */; };
+		58635E712149BD5300925B38 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E702149BD5300925B38 /* BorderButton.swift */; };
+		58635E762149F1DC00925B38 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E752149F1DC00925B38 /* LeagueVC.swift */; };
+		58635E782149F1F000925B38 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E772149F1F000925B38 /* SkillVC.swift */; };
+		58635E7A2149FB0C00925B38 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E792149FB0C00925B38 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58635E5B2149B99D00925B38 /* Swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58635E5E2149B99D00925B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58635E602149B99D00925B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58635E602149B99D00925B38 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		58635E632149B99D00925B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58635E652149B99E00925B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58635E682149B99E00925B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58635E6A2149B99E00925B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58635E702149BD5300925B38 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		58635E752149F1DC00925B38 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		58635E772149F1F000925B38 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		58635E792149FB0C00925B38 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		58635E5D2149B99D00925B38 /* Swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				58635E742149E65400925B38 /* Model */,
+				58635E732149E64B00925B38 /* Controller */,
+				58635E722149E64200925B38 /* View */,
 				58635E5E2149B99D00925B38 /* AppDelegate.swift */,
-				58635E602149B99D00925B38 /* ViewController.swift */,
 				58635E622149B99D00925B38 /* Main.storyboard */,
 				58635E652149B99E00925B38 /* Assets.xcassets */,
 				58635E672149B99E00925B38 /* LaunchScreen.storyboard */,
 				58635E6A2149B99E00925B38 /* Info.plist */,
 			);
 			path = Swoosh;
+			sourceTree = "<group>";
+		};
+		58635E722149E64200925B38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58635E702149BD5300925B38 /* BorderButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58635E732149E64B00925B38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58635E602149B99D00925B38 /* WelcomeVC.swift */,
+				58635E752149F1DC00925B38 /* LeagueVC.swift */,
+				58635E772149F1F000925B38 /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58635E742149E65400925B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58635E792149FB0C00925B38 /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58635E612149B99D00925B38 /* ViewController.swift in Sources */,
+				58635E612149B99D00925B38 /* WelcomeVC.swift in Sources */,
+				58635E762149F1DC00925B38 /* LeagueVC.swift in Sources */,
 				58635E5F2149B99D00925B38 /* AppDelegate.swift in Sources */,
+				58635E782149F1F000925B38 /* SkillVC.swift in Sources */,
+				58635E7A2149FB0C00925B38 /* Player.swift in Sources */,
+				58635E712149BD5300925B38 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JB4UT3447V;
 				INFOPLIST_FILE = Swoosh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JB4UT3447V;
 				INFOPLIST_FILE = Swoosh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
